@@ -89,7 +89,7 @@ Users should be able to:
 - [Stack Overflow](https://stackoverflow.com/questions/10270452/jquery-change-not-firing-until-blur) - change event not firing until blur
 - [Stack Overflow](https://stackoverflow.com/questions/9555143/html-maxlength-attribute-not-working-on-chrome-and-safari) - maxlength and number inputs
 - [Stack Overflow](https://stackoverflow.com/questions/53427046/how-to-add-space-between-every-4-characters-in-javascript) - add space between every 4 characters in javascript
-- [Stacl Overflow](https://stackoverflow.com/questions/32936352/html-number-input-min-and-max-not-working-properly) - min and max not working properly
+- [Stack Overflow](https://stackoverflow.com/questions/32936352/html-number-input-min-and-max-not-working-properly) - min and max not working properly
 - [W3 Resource](https://www.w3resource.com/javascript/form/credit-card-validation.php) - credit card validation
 - [Javascript Tutorial](https://www.javascripttutorial.net/dom/manipulating/remove-all-child-nodes/) - remove all child nodes
 - [W3 Schools](https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp) - hide arrow number
