@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <div class="top-cards">
+      <div class="back-card-div">
+        <img src="./images/bg-card-back.png" alt="">
+        <p id="display-cvc" class="display-back-number">000</p>
+      </div>
+      <div class="front-card-div">
+        <img src="./images/card-logo.svg" alt="">
+        <p id="display-cc-number" class="margin-block-20 font-size-26">0000 0000 0000 0000</p>
+        <div class="flex between align-center">
+          <p id="display-name">Jane Appleseed</p>
+          <p><span id="display-month">00</span>/<span id="display-year">00</span></p>
+        </div>
+      </div>
+    </div>
+    <div id="form-container" class="form-container">
+      <form id="form">
+        <label for="name">Cardholder Name</label>
+        <input type="text" id="name" name="name" placeholder="e.g. Jane Appleseed" maxlength="30" required>
+        <label for="number">Card Number</label>
+        <input id="number" type="text" name="number" maxlength="16" placeholder="e.g. 1234 5678 9123 0000" oninput="this.value=this.value.slice(0,this.maxLength)" required>
+        <div id="number-input-error" class="d-none">Wrong format, numbers only</div>
+        <div id="number-input-error-16" class="d-none">16 numbers required</div>
+        <div class="expiry-container">
+          <fieldset>
+            <legend>EXP. Date (MM/YY)</legend>
+            <label for="month" class="d-none">Month</label>
+            <input type="number" min="0" max="12"  id="month" name="month" class="exp-input" placeholder="MM" required/><!--maxlength="2" oninput="this.value=this.value.slice(0,this.maxLength)"-->
+            <label for="year" class="d-none">Year</label>
+            <input type="number" min="22" max="30" id="year" name="year" class="exp-input" placeholder="YY" required/>
+          </fieldset>
+          <div class="flex-column">
+            <label for="cvc">CVC</label>
+            <input type="number" id="cvc" class="cvc-input" placeholder="e.g. 123" max="999" required>
+          </div>
+        </div>
+        <div class="flex error-container">
+          <div id="expiry-error-message" class="d-none width-40vw" aria-live="polite">Length must be 2.  Add zero before month ie 05</div>
+          <div id="cvc-error-message" class="d-none width-40vw margin-left-auto" aria-live="polite">Length must be 3.</div>
+        </div>
+        <button>Confirm</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
